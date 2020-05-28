@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1">
+	<top>
+		<ToolBar>
+			<items>
+				<Button text="New">
+					<graphic>
+						<ImageView>
+						<image>
+							<Image url="@../icons/new.png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</Button>
+			</Button text="Open">
+				<graphic>
+				</ImageView>
+				<image>
+					<Image url="@../icons/new.png" />
+					</image>
+				</ImageView>
+				</graphic>
+			</Button>
+				<Separtor />
+				<Button text="save">
+					<graphic>
+						<ImageView>
+							<image>
+								<Image url="@../icons/save.png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</Button>
+			</items>
+		</ToolBar>
+	</top>
+	<center>
+		<TextArea />
+	</center>
+	<bottom>
+	</bottom>
+</BorderPane>
+
