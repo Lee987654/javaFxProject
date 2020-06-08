@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Button?>
 
-
-<HBox xmlns:fx="http://javafx.com/fxml/1" 
-fx:controller="fxml.ButtonController" 
-	prefHeight ="50" prefWidth="300"
-	alignment="CENTER" spacing="20">
-	<Button fx:id="btnNew" text="New" />
-	<Button fx:id="btnOpen" text="Open" />
-	<Button fx:id="btnSave" text="Save" onAction="#btnSaveAction"/>
+<HBox alignment="CENTER" prefHeight="50" prefWidth="300" spacing="20" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="fxml.ButtonController">
+   <children>
+      <VBox prefHeight="100.0" prefWidth="100.0">
+         <children>
+            <CheckBox mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" text="안경" />
+            <CheckBox mnemonicParsing="false" prefWidth="100.0" text="모자" />
+            <ImageView fitHeight="152.0" fitWidth="192.0">
+               <image>
+                  <Image url="@../panes/images/geek-glasses.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <VBox prefHeight="152.0" prefWidth="155.0">
+         <children>
+            <RadioButton fx:id="rad1" mnemonicParsing="false" text="RadioButton" />
+            <RadioButton fx:id="rad2" mnemonicParsing="false" text="RadioButton" />
+            <RadioButton fx:id="rad3" mnemonicParsing="false" text="RadioButton" />
+            <ImageView>
+               <image>
+                  <Image url="@../panes/images/BubbleChart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
+   </children>
 </HBox>
-
